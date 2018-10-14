@@ -28,7 +28,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="11" />
-          <entry key="gitignore" value="2" />
+          <entry key="gitignore" value="3" />
           <entry key="java" value="15" />
           <entry key="xml" value="1" />
         </counts>
@@ -37,7 +37,7 @@
         <counts>
           <entry key="CLASS" value="11" />
           <entry key="JAVA" value="15" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -356,7 +356,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539540072746" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539540122392" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -504,7 +504,7 @@
       <updated>1537711632737</updated>
       <workItem from="1537711635914" duration="5195000" />
       <workItem from="1537722198616" duration="5962000" />
-      <workItem from="1539535737285" duration="3405000" />
+      <workItem from="1539535737285" duration="3658000" />
     </task>
     <task id="LOCAL-00001" summary="added gitignore file">
       <created>1539539588421</created>
@@ -549,10 +549,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14562000" />
+    <option name="totallyTimeSpent" value="14815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1613" height="1025" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.255903" />
       <window_info id="Image Layers" order="1" />

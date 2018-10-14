@@ -4,9 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90b502c2-5e9a-4a10-8be3-74d615b3357a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="90b502c2-5e9a-4a10-8be3-74d615b3357a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/concurrency/target/" />
@@ -30,7 +28,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="11" />
-          <entry key="gitignore" value="1" />
+          <entry key="gitignore" value="2" />
           <entry key="java" value="15" />
           <entry key="xml" value="1" />
         </counts>
@@ -39,19 +37,21 @@
         <counts>
           <entry key="CLASS" value="11" />
           <entry key="JAVA" value="15" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="3004" />
+          <entry key="txt" value="29" />
           <entry key="xml" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="3004" />
+          <entry key="PLAIN_TEXT" value="29" />
           <entry key="XML" value="18" />
         </counts>
       </usages-collector>
@@ -75,7 +75,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -156,6 +160,7 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/tretyakov/pingpong/PingPong.java" />
         <option value="$PROJECT_DIR$/concurrency/src/main/java/ru/tretyakov/pingpong/PingPong.java" />
         <option value="$PROJECT_DIR$/concurrency/src/main/java/ru/tretyakov/pingpong/RectangleMove.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -351,7 +356,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539539709788" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539539857287" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -375,6 +380,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -496,8 +504,16 @@
       <updated>1537711632737</updated>
       <workItem from="1537711635914" duration="5195000" />
       <workItem from="1537722198616" duration="5962000" />
-      <workItem from="1539535737285" duration="3071000" />
+      <workItem from="1539535737285" duration="3405000" />
     </task>
+    <task id="LOCAL-00001" summary="added gitignore file">
+      <created>1539539588421</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539539588421</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -533,11 +549,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14228000" />
+    <option name="totallyTimeSpent" value="14562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1613" height="1025" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.255903" />
       <window_info id="Image Layers" order="1" />
@@ -575,6 +590,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added gitignore file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added gitignore file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -740,7 +759,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

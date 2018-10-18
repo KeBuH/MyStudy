@@ -13,9 +13,7 @@ public class RectangleMove implements Runnable {
      * Shape
      */
     private final Rectangle rect;
-    private int limitX;
-    private boolean straight = true;
-    static boolean open = true;
+    private final int limitX;
 
     /**
      * Init constructor.
@@ -32,13 +30,14 @@ public class RectangleMove implements Runnable {
      */
     @Override
     public void run() {
-        while (open) {
+        boolean straight = true;
+        while (true) {
             if (this.rect.getX() == limitX) {
-                this.straight = false;
+                straight = false;
             } else if (this.rect.getX() == 0) {
-                this.straight = true;
+                straight = true;
             }
-            if (this.straight) {
+            if (straight) {
                 this.rect.setX(this.rect.getX() + 1);
             } else {
                 this.rect.setX(this.rect.getX() - 1);
@@ -46,7 +45,7 @@ public class RectangleMove implements Runnable {
             try {
                 Thread.sleep(50);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                return;
             }
         }
     }

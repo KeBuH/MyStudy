@@ -1,4 +1,5 @@
-package main.ru.tretyakov
+package ru.tretyakov.main
+
 /**
  * Test groovy class.
  */
@@ -20,4 +21,3 @@ class GroovyTest {
         println(test.sub(5))
     }
 }
-

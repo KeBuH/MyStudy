@@ -1,3 +1,3 @@
-package ru.tretyakov.main
+package main.ru.tretyakov
 
 println("Hello there!")

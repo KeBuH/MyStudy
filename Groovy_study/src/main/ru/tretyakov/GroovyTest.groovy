@@ -1,3 +1,4 @@
+package main.ru.tretyakov
 /**
  * Test groovy class.
  */
@@ -8,10 +9,15 @@ class GroovyTest {
         return this.var + var
     }
 
+    def sub(var) {
+        return this.var - var
+    }
+
 
     static void main(String[] args) {
         GroovyTest test = new GroovyTest();
         println(test.add(10))
+        println(test.sub(5))
     }
 }
 

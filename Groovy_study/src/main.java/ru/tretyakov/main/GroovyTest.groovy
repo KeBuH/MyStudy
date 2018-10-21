@@ -1,5 +1,5 @@
 /**
- * TODO comment.
+ * Test groovy class.
  */
 class GroovyTest {
     def var = 10

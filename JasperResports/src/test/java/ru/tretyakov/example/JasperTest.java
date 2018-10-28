@@ -6,7 +6,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import javax.swing.table.DefaultTableModel;
-import java.io.File;
 import java.util.HashMap;
 
 /**

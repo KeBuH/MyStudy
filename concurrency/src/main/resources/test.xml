@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<note xmlns="http://www.w3schools.com"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+      xs:schemaLocation="http://www.w3schools.com
+      file:/home/rooter/Documents/Projects/MyStudy/concurrency/src/main/resources/scheme.xsd">
+    <xs:to>Alex</xs:to>
+    <xs:from>Den</xs:from>
+    <xs:heading>Header</xs:heading>
+    <xs:body>Hello, Alex!</xs:body>
+</note>

@@ -23,6 +23,7 @@
     <modules>
         <module>concurrency</module>
         <module>JasperResports</module>
+        <module>concurency</module>
     </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/junit/junit -->

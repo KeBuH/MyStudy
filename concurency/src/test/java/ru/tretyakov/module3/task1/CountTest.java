@@ -1,4 +1,4 @@
-package ru.tretyakov.core;
+package ru.tretyakov.module3.task1;
 
 import org.junit.Test;
 

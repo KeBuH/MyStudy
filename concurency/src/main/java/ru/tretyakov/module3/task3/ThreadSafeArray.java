@@ -53,7 +53,7 @@ public class ThreadSafeArray<E> implements SimpleList<E> {
     @Override
     public Iterator<E> iterator() {
         synchronized (this) {
-            return clone().iterator();
+            return cloneContainer().iterator();
         }
     }
 
@@ -64,7 +64,7 @@ public class ThreadSafeArray<E> implements SimpleList<E> {
         }
     }
 
-    public MyArrayList<E> clone() {
+    private MyArrayList<E> cloneContainer() {
         synchronized (this) {
             return this.container.clone();
         }

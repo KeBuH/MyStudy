@@ -8,7 +8,7 @@ import java.util.Iterator;
 public class ThreadSafeArrayTest {
 
     @Test
-    public void test() throws CloneNotSupportedException {
+    public void test() {
         ThreadSafeArray<Bean> list = new ThreadSafeArray<>();
         list.add(new Bean("AAAA"));
         list.add(new Bean("BBBB"));
@@ -16,14 +16,13 @@ public class ThreadSafeArrayTest {
         list.add(new Bean("DDDD"));
 
         Iterator<Bean> it = list.iterator();
-
-        list.get(0).setValue("BBBB");
         list.remove(0);
 
+        System.out.println("IT ITEMS");
         while (it.hasNext()) {
             System.out.println(it.next().getValue());
         }
-        System.out.println("AFTER REMOVE...");
+        System.out.println("LIST ITEMS");
         for(int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i).getValue());
         }
@@ -41,5 +40,4 @@ public class ThreadSafeArrayTest {
             this.value = value;
         }
     }
-
 }

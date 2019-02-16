@@ -40,4 +40,19 @@ public class ThreadSafeArrayTest {
             this.value = value;
         }
     }
+
+    @Test
+    public void test2() {
+        MyArrayList list = new MyArrayList();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.remove(4);
+
+//        System.out.println(list.get(3));
+
+//        list.forEach(System.out::println);
+
+//        list.forEach(v -> list.add(2));
+    }
 }

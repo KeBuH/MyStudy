@@ -1,19 +1,22 @@
 package ru.tretyakov.module3.task3;
 
 import java.io.Serializable;
+import java.util.ConcurrentModificationException;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
+
 
 /**
  * TODO comment.
- *
  * @author Rooter
  * @since 03.02.19
  **/
 
-public class MyArrayList<E> implements SimpleList<E>, Cloneable {
+public class MyArrayList<E> implements SimpleList<E>, Iterable {
 
     private int size;
     private int capacity = 3;
+    private int modCount = 0;
     private Object[] container = new Object[capacity];
 
     @Override
@@ -36,12 +39,17 @@ public class MyArrayList<E> implements SimpleList<E>, Cloneable {
 
     @Override
     public Iterator<E> iterator() {
-        return new MyIterator<>();
+        return new MyIterator<E>(this.modCount);
     }
 
     private class MyIterator<E> implements Iterator<E>, Serializable {
 
         private int cursor;
+        private int innner = 0;
+
+        public MyIterator(int modCount) {
+            this.innner = modCount;
+        }
 
         @Override
         public boolean hasNext() {
@@ -50,6 +58,9 @@ public class MyArrayList<E> implements SimpleList<E>, Cloneable {
 
         @Override
         public E next() {
+            if (this.innner != modCount) {
+                throw new ConcurrentModificationException("some error message");
+            }
             return (E) container[this.cursor++];
         }
     }
@@ -60,11 +71,16 @@ public class MyArrayList<E> implements SimpleList<E>, Cloneable {
             container = grow();
         }
         this.container[size++] = o;
+        this.modCount++;
         return true;
     }
 
     public E get(final int index) {
-        return (E) this.container[index];
+        try {
+            return (E) this.container[index];
+        } catch (Exception e) {
+            throw new NoSuchElementException(e.getMessage());
+        }
     }
 
     @Override
@@ -80,8 +96,12 @@ public class MyArrayList<E> implements SimpleList<E>, Cloneable {
 
     @Override
     public boolean remove(final int index) {
+        boolean operationResult = true;
         if (this.size == 0) {
-            return false;
+            operationResult = false;
+        }
+        if (this.size < index) {
+            throw new NoSuchElementException(String.valueOf(index));
         }
         Object[] result = new Object[container.length - 1];
         int focus = 0;
@@ -93,8 +113,9 @@ public class MyArrayList<E> implements SimpleList<E>, Cloneable {
             }
         }
         this.size--;
-        container = result;
-        return true;
+        this.container = result;
+        this.modCount++;
+        return operationResult;
     }
 
     private Object[] grow() {

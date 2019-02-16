@@ -11,7 +11,7 @@ import java.util.Iterator;
  * @since 03.02.19
  **/
 
-public class ThreadSafeArray<E> implements SimpleList<E> {
+public class ThreadSafeArray<E> implements SimpleList<E>, Iterable {
 
     private final MyArrayList<E> container = new MyArrayList<>();
 
@@ -23,7 +23,7 @@ public class ThreadSafeArray<E> implements SimpleList<E> {
     }
 
     @Override
-    public E get(int index) {
+    public E get(final int index) {
         synchronized (this) {
             return this.container.get(index);
         }
@@ -44,7 +44,7 @@ public class ThreadSafeArray<E> implements SimpleList<E> {
     }
 
     @Override
-    public boolean contains(E value) {
+    public boolean contains(final E value) {
         synchronized (this) {
             return this.container.contains(value);
         }

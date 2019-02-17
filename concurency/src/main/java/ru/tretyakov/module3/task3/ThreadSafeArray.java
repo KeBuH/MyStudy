@@ -1,6 +1,9 @@
 package ru.tretyakov.module3.task3;
 
 
+import net.jcip.annotations.GuardedBy;
+import net.jcip.annotations.ThreadSafe;
+
 import java.util.Iterator;
 
 
@@ -11,8 +14,10 @@ import java.util.Iterator;
  * @since 03.02.19
  **/
 
+@ThreadSafe
 public class ThreadSafeArray<E> implements SimpleList<E>, Iterable {
 
+    @GuardedBy("this")
     private final MyArrayList<E> container = new MyArrayList<>();
 
     @Override
